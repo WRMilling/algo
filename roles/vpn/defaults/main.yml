@@ -27,3 +27,6 @@ ciphers:
   compat:
     ike: aes128gcm16-prfsha512-ecp256,aes128-sha2_512-prfsha512-ecp256,aes128-sha2_384-prfsha384-ecp256!
     esp: aes128gcm16-ecp256,aes128-sha2_512-prfsha512-ecp256!
+  edgemax:
+    ike: aes128-sha2_256-prfsha256-ecp256!
+    esp: aes128-sha2_256-prfsha256-ecp256!

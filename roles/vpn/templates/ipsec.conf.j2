@@ -13,6 +13,9 @@ conn %default
 {% if Win10_Enabled is defined and Win10_Enabled == "Y" %}
     ike={{ ciphers.compat.ike }}
     esp={{ ciphers.compat.esp }}
+{% elif edgemax_support is defined and edgemax_support == True %}
+    ike={{ ciphers.edgemax.ike }}
+    esp={{ ciphers.edgemax.esp }}
 {% else %}
     ike={{ ciphers.defaults.ike }}
     esp={{ ciphers.defaults.esp }}
